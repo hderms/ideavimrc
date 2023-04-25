@@ -1,0 +1,37 @@
+""" Map leader to space ---------------------
+let mapleader=" "
+
+""" Plugins  --------------------------------
+set multiple-cursors
+set easymotion
+
+""" Plugin settings -------------------------
+let g:argtextobj_pairs="[:],(:),<:>"
+
+""" Common settings -------------------------
+set showmode
+set so=5
+set incsearch
+set nu
+
+""" Idea specific settings ------------------
+set ideajoin
+set ideastatusicon=enabled
+set idearefactormode=select
+
+""" Mappings --------------------------------
+map <leader>f <Plug>(easymotion-s)
+map <leader>e <Plug>(easymotion-f)
+
+map <leader>r <Action>(RenameElement)
+map <leader>m <Action>(ExtractMethod)
+map <leader>b <Action>(BuildArtifact)
+map <leader>c <Action>(Vcs.Log.ShowChangesFromParents)
+map <leader>l <Action>(Vcs.ShowHistoryForBlock)
+map <leader>n <Action>(GotoNextError)
+map <leader>s <Action>(SelectInProjectView)
+map <leader>a <Action>(Annotate)
+map <leader>o <Action>(FileStructurePopup)
+
+
+
